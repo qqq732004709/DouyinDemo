@@ -91,12 +91,12 @@ namespace DouyinDemo
                         return;
                     }
                     await page.GetByText("重新上传").WaitForAsync(new LocatorWaitForOptions { State = WaitForSelectorState.Visible });
+                    break;
                 }
                 catch (Exception ex)
                 {
                     //未上传成功等待1秒继续
                     await page.WaitForTimeoutAsync(1000);
-                    continue;
                 }
             }
 

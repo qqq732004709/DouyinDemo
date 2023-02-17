@@ -91,6 +91,7 @@ namespace DouyinDemo
                         return;
                     }
                     await page.GetByText("重新上传").WaitForAsync(new LocatorWaitForOptions { State = WaitForSelectorState.Visible });
+                    break;
                 }
                 catch (Exception ex)
                 {
